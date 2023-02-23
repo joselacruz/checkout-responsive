@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
+
+}
+
+h1{
+    margin-block-start: 32px;
+    margin-inline-start: 18px;
+    margin-block-end: 20.69px;
+   font-weight: 600;
+   font-size: 2.4rem;
+   line-height:2.9rem;
+}
+
+.product-show{
+    width: 300px;
+    height: 489px;
+    border-radius: 12px;
+    background-color: rgba(242, 242, 242, 1);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3,1fr);
+
+}
+
+
+.card-product{
+    display: grid;
+    grid-template-columns: max-content max-content;
+    justify-content: center;
+    align-self: end;
+    gap: 14px;
+    
+}
+
+.card-product figure{
+    place-self:center;
+    width: 134.21px;
+    height: 136.27px;
+}
+
+.card-product figure img{
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+.card-info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card__info p:nth-child(1) {
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: rgba(78, 81, 80, 1);
+    
+}
+.card__info p:nth-child(2){
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: rgba(242, 153, 74, 1);
+    display: inline;
+
+}
+.card__info small{
+    margin-inline-start: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    color:  rgba(78, 81, 80, 1);
+    text-decoration: line-through;
+
+}
+
+.card-quanty{
+    width: 122px;
+    height: 49px;
+    border: 1px solid rgba(130, 130, 130, 1);
+    border-radius: 12px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+.card-quanty p:nth-child(2){
+    font-weight: 600;
+    font-size:1.6rem;
+    line-height: 1.9rem; 
+   color:  rgba(51, 51, 51, 1);
+    
+}
+.card-quanty div {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(224, 224, 224, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.card-quanty div p{
+    font-size: 2.1rem;
+    color: rgba(130, 130, 130, 1);
+    
+}
+
+.card-footer{
+    padding: 75px 16px 0px;
+}
+
+.card-footer-sumary{
+    height: 37px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid  rgba(189, 189, 189, 1);
+}
+
+.card-footer-sumary p{
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: rgba(51, 51, 51, 1);
+}
+
+.shipping-details{
+    width: 300px;
+    margin:0 auto ;
+}
+.shipping-details .contac-info{
+    margin-block-start: 39px;
+}
+
+.shipping-details .contac-info h3{
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: rgba(51, 51, 51, 1);
+}
+.shipping-details .contac-info p{
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    color:  rgba(79, 79, 79, 1);
+    margin-block-start: 11px;
+    margin-block-end: 5px;
+}
+
+.shipping-detail__but1{
+    width: 290px;
+    height: 36px;
+    border: 1px solid rgba(130, 130, 130, 1);
+    border-radius: 12px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 13px;
+}
+
+
+
+.shipping-detail__but1 input::placeholder{
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color:rgba(130, 130, 130, 1);
+    
+}
+
+.shipping-detail__but1 input{
+    width: 239px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color:rgba(130, 130, 130, 1);
+    border: none;
+    outline: none;
+    
+}
+
+
+
+.shipping-detail__but1 span{
+    display: inline;
+    display: inline-block;
+    width: 19px;
+    margin-inline-start: 10px;
+}
+
+.shipping-detail__but1 span img{
+    width: 100%;
+}
+/*
+.shipping-detail__but1 img{
+    width: 15px;
+    height: 13px;
+    margin-inline-start: 10px;
+} */
+
+.shipping-detail__but1:hover{
+    border-color:transparent;
+    box-shadow: 0 1.5px 3px 1px rgb(131, 128, 122);
+}
+.shipping-address{
+    margin-block-start: 58px;
+}
+
+.shipping-address h3{
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: #333333;
+
+}
+
+.shipping-details .shipping-address p{
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    color:  rgba(79, 79, 79, 1);
+    margin-block-start: 11px;
+    margin-block-end: 5px;
+}
+
+.shipping-item1 .shipping-detail__but2{
+    width: 140px;
+    height: 36px;
+    border: 1px solid rgba(130, 130, 130, 1);
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.shipping-item1 .shipping-detail__but2 input{
+    width: 90px;
+    border: none;
+    outline: none;
+    
+}
+.shipping-item1 .shipping-detail__but2 select{
+    width: 18px;
+    border-radius: 4px;
+    background-color: #E0E0E0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-inline-end: 5px;
+}
+
+.shipping-item1 .shipping-detail__but2 img{
+    width: 20px;
+   
+}
+
+
+
+
+.shipping-two-container {
+    display: flex;
+    gap: 11px;
+    
+}
+
+.shipping-item1 .shipping-detail__but2:hover{
+    border-color:transparent;
+    box-shadow: 0 1.5px 3px 1px #828282;
+}
+
+.footer-shipping-details{
+    width: 300px;
+   margin-block-start: 16px;
+
+}
+.footer-shipping-details  input{
+    border: 1px solid #828282;
+    height: 15px;
+    width: 16px;
+    border-radius: 4px;
+    margin-block-start: 2px;
+    position: relative;
+    top: 3px;
+
+}
+
+.footer-shipping-details p{
+    display: inline-block;
+    margin: 0;
+    margin-inline-start: 7px;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    color:  #4F4F4F;
+}
+
+.footer-shipping-details .button{
+    width: 166px;
+    height: 54px;
+    background-color: #F2994A;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 12px;
+   color: #FFFFFF;
+   font-weight: 600;
+   font-size: 1.6rem;
+   line-height: 1.9rem;
+   position: relative;
+   top: 24px;
+   left: 127px;
+   cursor: pointer;
+}
+.footer-shipping-details .button:hover{
+    border: 1px solid black;
+}
